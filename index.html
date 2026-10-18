@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SHOWCASE</title>
+<meta name="description" content="SHOWCASE: the portfolio of Rachel Li, marketing at Rutgers Business School.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=VT323&display=swap">
+<link rel="stylesheet" href="assets/rl-base.css">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<div class="site">
+
+  <!-- TOP BAR: just the SHOWCASE wordmark and the track counter -->
+  <header class="winbar" data-winbar>
+    <a class="wb-logo" href="#home" aria-label="SHOWCASE, go to home">SHOWCASE</a>
+    <span class="wb-track" data-bartrack>TRACK 01 / 06</span>
+  </header>
+
+  <!-- HOME: player centered over the giant name; scroll down for About -->
+  <div data-home>
+    <section class="home-hero" aria-label="Home">
+      <div class="giant-wrap" aria-hidden="true"><p class="home-title" data-hometitle>Showcase</p></div>
+      <div class="orbit" aria-hidden="true"></div>
+      <svg class="spark" style="left:21%;top:28%" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+      <svg class="spark g lg" style="left:73%;top:64%" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+      <svg class="spark" style="left:63%;top:16%" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+
+      <span class="speclabel tl">RACHEL LI<br>PORTFOLIO PLAYER</span>
+      <span class="speclabel tr">MARKETING · RUTGERS BUSINESS SCHOOL<br>GLOBAL BUSINESS / DCIM MINOR</span>
+      <span class="speclabel bl" data-hometrack>TRACK 01 / 06 · HOME</span>
+      <span class="speclabel br">128 KBPS · STEREO</span>
+
+      <h1 class="sr-only">SHOWCASE: Rachel Li's portfolio</h1>
+      <div class="slot-home" data-slot-home></div>
+
+      <section class="win hello" id="w-hello" data-closable aria-labelledby="t-hello">
+        <div class="titlebar"><span class="title" id="t-hello">hello.txt</span>
+          <div class="win-btns">
+            <button class="win-btn" type="button" data-act="min" aria-label="Minimize hello">_</button>
+            <button class="win-btn" type="button" data-act="close" aria-label="Close hello">×</button>
+          </div>
+        </div>
+        <div class="pane">
+          <span class="eyebrow">HI, I'M RACHEL</span>
+          <p>[my self intro and a welcome to the site here.]</p>
+        </div>
+      </section>
+
+      <a class="scroll-cue" href="#about">ABOUT ME<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></a>
+    </section>
+
+    <section class="about" id="about-me" data-about aria-labelledby="about-title">
+      <header class="about-head">
+        <div class="about-titles">
+          <span class="eyebrow" data-abouttrack>TRACK 02 / 06 · ABOUT</span>
+          <h2 id="about-title">About me</h2>
+        </div>
+        <!-- closed About windows land in the trash; open it to restore them -->
+        <button class="icon trash" type="button" data-trash aria-controls="w-bin" aria-expanded="false">
+          <svg class="ic" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <g class="paper"><path class="f-cream" d="M14 14l3-9 9 3-3 7z"/><path class="f-pond" d="M25 13l7-7 5 6-5 3z"/></g>
+            <path class="f-milk" d="M10 16h28l-3 27H13z"/>
+            <path class="f-none" d="M18 21l1 17M24 21v17M30 21l-1 17"/>
+            <rect class="f-berry" x="7" y="11" width="34" height="5" rx="1"/>
+            <path class="f-berry" d="M20 11V7h8v4"/>
+          </svg>
+          <span>trash <b data-trashcount></b></span>
+        </button>
+      </header>
+      <svg class="spark g lg" style="" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 0C13 8 16 11 24 12C16 13 13 16 12 24C11 16 8 13 0 12C8 11 11 8 12 0Z"/></svg>
+
+      <section class="win bin" id="w-bin" hidden aria-labelledby="t-bin">
+        <div class="titlebar"><span class="title" id="t-bin">trash</span>
+          <div class="win-btns">
+            <button class="win-btn" type="button" data-act="close" aria-label="Close trash">×</button>
+          </div>
+        </div>
+        <div class="pane">
+          <ul class="bin-list" data-binlist></ul>
+          <button class="btn primary" type="button" data-binall hidden>Restore all</button>
+        </div>
+        <div class="statusbar"><span>Closed windows wait here</span></div>
+      </section>
+
+      <section class="win w-main" id="w-aboutme" data-closable aria-labelledby="t-about">
+        <div class="titlebar"><span class="title" id="t-about">about_me.txt</span>
+          <div class="win-btns">
+            <button class="win-btn" type="button" data-act="min" aria-label="Minimize about me">_</button>
+            <button class="win-btn" type="button" data-act="close" aria-label="Close about me">×</button>
+          </div>
+        </div>
+        <div class="pane">
+          <span class="eyebrow">HI AGAIN</span>
+          <p>[a few lines about who I am here.]</p>
+          <p>[what I care about and what I'm looking for next here.]</p>
+        </div>
+        <div class="statusbar"><span>Done</span><span>TXT</span></div>
+      </section>
+
+      <section class="win w-facts" id="w-facts" data-closable aria-labelledby="t-facts">
+        <div class="titlebar"><span class="title" id="t-facts">quick_facts.exe</span>
+          <div class="win-btns">
+            <button class="win-btn" type="button" data-act="min" aria-label="Minimize quick facts">_</button>
+            <button class="win-btn" type="button" data-act="close" aria-label="Close quick facts">×</button>
+          </div>
+        </div>
+        <div class="pane">
+          <ul class="lines">
+            <li><span class="when">SCHOOL</span><span>Rutgers Business School</span></li>
+            <li><span class="when">MAJOR</span><span>Marketing, Global Business concentration</span></li>
+            <li><span class="when">MINOR</span><span>DCIM</span></li>
+            <li><span class="when">GRAD</span><span>May 2027</span></li>
+            <li><span class="when">BASED IN</span><span>New Brunswick, NJ</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="win w-now" id="w-now" data-closable aria-labelledby="t-now">
+        <div class="titlebar"><span class="title" id="t-now">now_playing.mp3</span>
+          <div class="win-btns">
+            <button class="win-btn" type="button" data-act="min" aria-label="Minimize now playing">_</button>
+            <button class="win-btn" type="button" data-act="close" aria-label="Close now playing">×</button>
+          </div>
+        </div>
+        <div class="pane">
+          <span class="eyebrow">WHAT I'M WORKING ON</span>
+          <ol class="tracklist">
+            <li><span class="no">01</span><span>[something I'm working on]</span><span class="len">[when]</span></li>
+            <li><span class="no">02</span><span>[something I'm working on]</span><span class="len">[when]</span></li>
+            <li><span class="no">03</span><span>[something I'm working on]</span><span class="len">[when]</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <aside class="win mini" aria-labelledby="t-mini">
+        <div class="titlebar"><span class="title" id="t-mini">mini_player.exe</span></div>
+        <div class="mini-body">
+          <div class="mini-screen">
+            <span class="mini-label">NOW PLAYING</span>
+            <span class="mini-track">02 · about.mp3</span>
+            <span class="mini-prog" aria-hidden="true"><i></i></span>
+          </div>
+          <div class="mini-ctrls">
+            <button class="mini-btn" type="button" data-go="home" aria-label="Previous track: back to the player at the top"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h3v14H4zM20 5L9 12l11 7z"/></svg></button>
+            <button class="mini-btn up" type="button" data-go="home"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l8 10h-5v6H9v-6H4z"/></svg>BACK TO PLAYER</button>
+            <button class="mini-btn" type="button" data-go="experience" aria-label="Next track: experience"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 5h3v14h-3zM4 5l11 7-11 7z"/></svg></button>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </div>
+
+  <!-- INNER PAGES: player docks on the left, title moves to the top, icons open the content -->
+  <section class="page" data-page hidden>
+    <aside class="rail"><div class="slot-side" data-slot-side></div></aside>
+    <div class="page-main">
+      <header class="masthead">
+        <div class="meta"><span class="eyebrow" data-eyebrow>TRACK 02 / 05</span><span class="speclabel" data-pagenote></span></div>
+        <h1 class="page-title" data-pagetitle>Experience</h1>
+      </header>
+      <div data-deskhost></div>
+    </div>
+  </section>
+
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
